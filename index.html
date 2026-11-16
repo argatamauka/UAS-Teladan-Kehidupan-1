@@ -2,7 +2,7 @@
 <html lang="id"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan UAS • Markus 5 &amp; 6 — The Exemplary Living 1</title>
+  <title>Latihan UAS • Markus 5–8 — The Exemplary Living 1</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Font: Inter -->
@@ -287,7 +287,7 @@
       <!-- 1. Question Number Grid Pill -->
       <div class="relative dropdown-wrapper">
         <button type="button" data-dropdown="menuMap" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-[#1E1D1B] text-stone-800 dark:text-stone-100 border border-[#E7E5E4] dark:border-stone-800 shadow-2xs hover:bg-stone-50 dark:hover:bg-stone-800 active:scale-95 transition-all">
-          <span id="poolCounterText">1 / 14</span>
+          <span id="poolCounterText">1 / 32</span>
           <span class="text-[10px] text-stone-400">▾</span>
         </button>
 
@@ -306,17 +306,17 @@
         <div class="relative dropdown-wrapper">
           <button type="button" data-dropdown="menuFilter" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-[#1E1D1B] text-stone-700 dark:text-stone-200 border border-[#E7E5E4] dark:border-stone-800 shadow-2xs hover:bg-stone-50 dark:hover:bg-stone-800 active:scale-95 transition-all">
             <span>🔽</span>
-            <span id="filterLabelText">Hanya Benar / Salah (14)</span>
+            <span id="filterLabelText">Hanya Benar / Salah (32)</span>
             <span class="text-[10px] text-stone-400">▾</span>
           </button>
 
           <div id="menuFilter" class="dropdown-menu right-0 mt-2 w-64 max-w-[calc(100vw-2rem)] rounded-2xl bg-white dark:bg-[#1E1D1B] border border-[#E7E5E4] dark:border-stone-800 shadow-xl p-1.5">
             <button type="button" data-action="set-filter" data-value="tf" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
-              <span>Hanya Benar / Salah (14)</span>
+              <span>Hanya Benar / Salah (32)</span>
               <span id="chkFilter-tf" class="text-[#EA580C] font-bold">✓</span>
             </button>
             <button type="button" data-action="set-filter" data-value="all" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
-              <span>Semua Soal Asli (23)</span>
+              <span>Semua Soal Asli (46)</span>
               <span id="chkFilter-all" class="text-[#EA580C] font-bold hidden">✓</span>
             </button>
             <button type="button" data-action="set-filter" data-value="mark5" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
@@ -326,6 +326,14 @@
             <button type="button" data-action="set-filter" data-value="mark6" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
               <span>Markus 6 (12)</span>
               <span id="chkFilter-mark6" class="text-[#EA580C] font-bold hidden">✓</span>
+            </button>
+            <button type="button" data-action="set-filter" data-value="mark7" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
+              <span>Markus 7 (11)</span>
+              <span id="chkFilter-mark7" class="text-[#EA580C] font-bold hidden">✓</span>
+            </button>
+            <button type="button" data-action="set-filter" data-value="mark8" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
+              <span>Markus 8 (12)</span>
+              <span id="chkFilter-mark8" class="text-[#EA580C] font-bold hidden">✓</span>
             </button>
             <button type="button" data-action="set-filter" data-value="bookmarked" data-close-dropdown="true" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-stone-800 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800">
               <span>Soal Ditandai (⭐ <span id="bookmarkCountBadge">0</span>)</span>
@@ -504,11 +512,11 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-5">
           <button type="button" id="btnPacket14" data-action="select-packet" data-value="tf14" class="p-4 rounded-2xl border-2 border-[#EA580C] bg-orange-50/40 dark:bg-orange-950/20 text-left">
             <div class="text-xs font-bold text-[#EA580C]">Sesuai Info Dosen</div>
-            <div class="text-base font-bold text-stone-900 dark:text-white mt-0.5">14 Soal Benar / Salah (Sesuai UAS)</div>
+            <div class="text-base font-bold text-stone-900 dark:text-white mt-0.5">32 Soal Benar / Salah (Sesuai UAS)</div>
           </button>
           <button type="button" id="btnPacket23" data-action="select-packet" data-value="all23" class="p-4 rounded-2xl border-2 border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-900/40 text-left">
             <div class="text-xs font-bold text-stone-400">Latihan Menyeluruh</div>
-            <div class="text-base font-bold text-stone-900 dark:text-white mt-0.5">23 Soal Lengkap (Semua Soal Asli)</div>
+            <div class="text-base font-bold text-stone-900 dark:text-white mt-0.5">46 Soal Lengkap (Semua Soal Asli)</div>
           </button>
         </div>
 
@@ -521,7 +529,7 @@
       <div id="examRunningBox" class="hidden">
         <div class="flex items-center justify-between gap-2 mb-2.5">
           <span id="examProgressBadge" class="px-3.5 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-[#1E1D1B] border border-[#E7E5E4] dark:border-stone-800">
-            Soal 1 / 14
+            Soal 1 / 32
           </span>
           <div class="flex items-center gap-2">
             <span id="examTimerDisplay" class="px-3 py-1.5 rounded-full text-xs font-bold bg-white dark:bg-[#1E1D1B] border border-[#E7E5E4] dark:border-stone-800">
@@ -684,7 +692,7 @@
 
       <div class="bg-white dark:bg-[#1E1D1B] border border-[#E7E5E4] dark:border-stone-800 rounded-2xl p-5 sm:p-7 shadow-2xs">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-4">
-          <h3 class="text-base font-extrabold text-stone-900 dark:text-white">Pencarian Cepat 23 Soal Asli</h3>
+          <h3 class="text-base font-extrabold text-stone-900 dark:text-white">Pencarian Cepat 46 Soal Asli</h3>
           <input id="summarySearchInput" type="text" placeholder="Cari kata kunci (mis. Gerasa, 5.000, Yairus)..." class="w-full sm:w-64 px-3.5 py-2 rounded-full text-xs bg-stone-50 dark:bg-stone-900 border border-stone-200 dark:border-stone-700 focus:outline-none focus:border-[#EA580C]">
         </div>
         <div id="summarySearchList" class="space-y-2"></div>
@@ -703,11 +711,11 @@
       <div class="grid grid-cols-2 gap-2.5 mb-4 shrink-0">
         <div class="p-3 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/30 border border-emerald-200/70 dark:border-emerald-800/50">
           <div class="text-[11px] font-semibold text-emerald-700 dark:text-emerald-300">Skor Benar / Salah</div>
-          <div id="statTfScore" class="text-lg font-extrabold text-[#16A34A] mt-0.5">0 / 14</div>
+          <div id="statTfScore" class="text-lg font-extrabold text-[#16A34A] mt-0.5">0 / 32</div>
         </div>
         <div class="p-3 rounded-xl bg-orange-50/70 dark:bg-orange-950/30 border border-orange-200/70 dark:border-orange-800/50">
           <div class="text-[11px] font-semibold text-orange-700 dark:text-orange-300">Total Dikuasai</div>
-          <div id="statMasteryTotal" class="text-lg font-extrabold text-[#EA580C] mt-0.5">0 / 23</div>
+          <div id="statMasteryTotal" class="text-lg font-extrabold text-[#EA580C] mt-0.5">0 / 46</div>
         </div>
       </div>
       <div class="flex-1 overflow-y-auto mb-4">
@@ -744,7 +752,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      /* ==================== 1. ALL 23 ORIGINAL WORKSHEET QUESTIONS ==================== */
+      /* ==================== 1. ALL 46 ORIGINAL WORKSHEET QUESTIONS ==================== */
       const QUESTIONS = [
         // MARKUS 5 (11 Items)
         {
@@ -1431,6 +1439,10 @@
           list = QUESTIONS.filter(function (q) { return q.ch === 'mark5'; });
         } else if (state.filter === 'mark6') {
           list = QUESTIONS.filter(function (q) { return q.ch === 'mark6'; });
+        } else if (state.filter === 'mark7') {
+          list = QUESTIONS.filter(function (q) { return q.ch === 'mark7'; });
+        } else if (state.filter === 'mark8') {
+          list = QUESTIONS.filter(function (q) { return q.ch === 'mark8'; });
         } else if (state.filter === 'bookmarked') {
           list = QUESTIONS.filter(function (q) { return Boolean(state.bookmarks[q.id]); });
         } else {
@@ -1492,7 +1504,7 @@
       function renderAll() {
         updateBgmUI();
 
-        // Circular SVG progress ring (23 questions total)
+        // Circular SVG progress ring (all worksheet questions)
         let masteredCount = 0;
         QUESTIONS.forEach(function (q) {
           if (q.type === 'tf' && state.tfAnswers[q.id] === q.correct) masteredCount++;
@@ -1527,10 +1539,12 @@
 
         // Filter labels
         const filterLabels = {
-          tf: 'Hanya Benar / Salah (14)',
-          all: 'Semua Soal Asli (23)',
+          tf: 'Hanya Benar / Salah (32)',
+          all: 'Semua Soal Asli (46)',
           mark5: 'Markus 5 (11)',
           mark6: 'Markus 6 (12)',
+          mark7: 'Markus 7 (11)',
+          mark8: 'Markus 8 (12)',
           bookmarked: 'Soal Ditandai (⭐)'
         };
         document.getElementById('filterLabelText').textContent = state.wrongOnlyIds
@@ -1538,7 +1552,7 @@
           : filterLabels[state.filter];
         document.getElementById('bookmarkCountBadge').textContent = String(Object.keys(state.bookmarks).length);
 
-        ['tf', 'all', 'mark5', 'mark6', 'bookmarked'].forEach(function (f) {
+        ['tf', 'all', 'mark5', 'mark6', 'mark7', 'mark8', 'bookmarked'].forEach(function (f) {
           document.getElementById('chkFilter-' + f).classList.toggle('hidden', Boolean(state.wrongOnlyIds) || state.filter !== f);
         });
 
@@ -1877,8 +1891,8 @@
           if (q.type === 'essay' && state.mastered[q.id]) totalMastered++;
         });
         const wrongIds = getWrongQuestionIds();
-        document.getElementById('statTfScore').textContent = tfOk + ' / 14';
-        document.getElementById('statMasteryTotal').textContent = totalMastered + ' / 23';
+        document.getElementById('statTfScore').textContent = tfOk + ' / ' + QUESTIONS.filter(function (q) { return q.type === 'tf'; }).length;
+        document.getElementById('statMasteryTotal').textContent = totalMastered + ' / ' + QUESTIONS.length;
         document.getElementById('statWrongCount').textContent = String(wrongIds.length);
         document.getElementById('btnPracticeWrong').disabled = wrongIds.length === 0;
 
